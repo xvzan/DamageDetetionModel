@@ -38,7 +38,7 @@ train_losses = []
 val_losses = []
 val_accuracies = []
 
-model = MyModel(input_channel=8, num_classes=len(classes)).to(device)
+model = MyModel(input_channel=2, num_classes=len(classes)).to(device)
 loss_fn = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0002)
 

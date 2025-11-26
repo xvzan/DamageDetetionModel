@@ -29,7 +29,9 @@ class DM(Dataset):
         end = 0
         for ec in ecs:
             for k in KVS:
-                ced = np.concatenate([ec[KVS[k][0]], ec[KVS[k][1]]], axis=1)
+                # ced = np.concatenate([ec[KVS[k][0]], ec[KVS[k][1]]], axis=1)
+                # ced = ec[KVS[k][0]]
+                ced = ec[KVS[k][0]][:, [0, 2]]
                 num = ced.shape[0] // (SINGLE_LEN * 2)
                 end += num
                 self.index_map.append([end, k])
