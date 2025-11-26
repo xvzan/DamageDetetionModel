@@ -33,7 +33,12 @@ project/
 
 展示训练与验证过程中的损失和准确率变化，有助于判断模型是否过拟合或欠拟合。
 
-![Loss and Accuracy](pics/loss_accuracy_combined_8c.png)
+- 8通道
+![Loss and Accuracy (8 channels)](pics/loss_accuracy_combined_8c.png)
+- 4通道
+![Loss and Accuracy (4 channels)](pics/loss_accuracy_combined_4c.png)
+- 2通道
+![Loss and Accuracy (2 channels)](pics/loss_accuracy_combined_2c.png)
 
 ---
 
